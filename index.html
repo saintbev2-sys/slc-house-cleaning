@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Greater Salt Lake House Cleaning — Spotless Homes, Done with Care</title>
+<meta name="description" content="Family-owned house cleaning in Salt Lake City. Deep cleans, move-in/move-out, office, and standard cleaning. 5.0 stars. Free estimates. Call (385) 331-8787." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#F4F8F1;
+    --ink:#10261F;
+    --ink-soft:#41584F;
+    --green:#1C7C4D;
+    --green-deep:#125639;
+    --mint:#DBEDDD;
+    --mint-soft:#E9F4EA;
+    --cream:#FBF6EC;
+    --white:#FFFFFF;
+    --gold:#C49A3F;
+    --line:#D9E5D8;
+    --shadow:0 18px 50px -24px rgba(16,38,31,.35);
+    --radius:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:"Bricolage Grotesque",sans-serif;line-height:1.04;letter-spacing:-.02em;font-weight:700}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    font-size:.74rem;color:var(--green);
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(244,248,241,.82);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s, box-shadow .3s;
+  }
+  header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -20px rgba(16,38,31,.5)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.12rem}
+  .mark{
+    width:38px;height:38px;border-radius:11px;flex:0 0 auto;
+    background:linear-gradient(150deg,var(--green),var(--green-deep));
+    display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px -8px rgba(28,124,77,.7);
+  }
+  .mark svg{width:21px;height:21px}
+  .nav-links{display:flex;align-items:center;gap:34px}
+  .nav-links a.link{font-size:.95rem;color:var(--ink-soft);font-weight:500}
+  .nav-links a.link:hover{color:var(--ink)}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;justify-content:center;
+    font-family:"Bricolage Grotesque",sans-serif;font-weight:600;
+    padding:13px 22px;border-radius:999px;font-size:.96rem;cursor:pointer;border:none;
+    transition:transform .15s ease, box-shadow .25s ease, background .2s;
+  }
+  .btn-primary{background:var(--green);color:#fff;box-shadow:0 12px 24px -12px rgba(28,124,77,.8)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 30px -12px rgba(28,124,77,.85)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--green);color:var(--green)}
+  .btn-lg{padding:16px 28px;font-size:1.02rem}
+  @media(max-width:780px){.nav-links a.link{display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:84px 0 70px;overflow:hidden}
+  .hero-glow{
+    position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(620px 380px at 78% 8%, rgba(255,242,205,.55), transparent 60%),
+      radial-gradient(700px 520px at 12% 95%, rgba(219,237,221,.7), transparent 62%);
+  }
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+  .hero h1{font-size:clamp(2.7rem,6.2vw,4.6rem);font-weight:800;margin:18px 0 0}
+  .hero h1 .shine{
+    background:linear-gradient(120deg,var(--green),#3FB97D 55%,var(--green-deep));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lede{font-size:1.18rem;color:var(--ink-soft);margin:22px 0 0;max-width:33ch}
+  .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .trust-row{display:flex;align-items:center;gap:20px;margin-top:34px;flex-wrap:wrap}
+  .stars{display:flex;align-items:center;gap:9px}
+  .stars .s{color:var(--gold);font-size:1.15rem;letter-spacing:2px}
+  .stars b{font-family:"Bricolage Grotesque",sans-serif}
+  .trust-sep{width:1px;height:30px;background:var(--line)}
+  .trust-row .muted{font-size:.9rem;color:var(--ink-soft)}
+
+  /* hero card */
+  .hero-card{
+    position:relative;background:var(--white);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:26px;border:1px solid var(--line);
+  }
+  .hero-card .card-top{display:flex;align-items:center;gap:14px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+  .avatar{width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#A7DCBE,#5FB98A);display:grid;place-items:center;color:#0c3a26;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.2rem}
+  .hero-card .ct-name{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.02rem}
+  .hero-card .ct-sub{font-size:.84rem;color:var(--ink-soft)}
+  .badge-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+  .badge{display:flex;align-items:center;gap:11px;background:var(--mint-soft);border-radius:13px;padding:13px 14px;font-size:.9rem;font-weight:500}
+  .badge svg{width:19px;height:19px;color:var(--green);flex:0 0 auto}
+  .hero-card .ping{margin-top:20px;display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--ink-soft)}
+  .dot{width:9px;height:9px;border-radius:50%;background:#28c07a;box-shadow:0 0 0 0 rgba(40,192,122,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(40,192,122,.55)}70%{box-shadow:0 0 0 9px rgba(40,192,122,0)}100%{box-shadow:0 0 0 0 rgba(40,192,122,0)}}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px}.hero{padding:56px 0 50px}.hero p.lede{max-width:none}}
+
+  /* ---------- Marquee strip ---------- */
+  .strip{background:var(--ink);color:#cfe3d6;overflow:hidden;padding:16px 0}
+  .strip-track{display:flex;gap:48px;white-space:nowrap;animation:slide 26s linear infinite;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;letter-spacing:.02em}
+  .strip-track span{display:inline-flex;align-items:center;gap:48px;font-size:1rem}
+  .strip i{color:#5FB98A;font-style:normal}
+  @keyframes slide{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.strip-track{animation:none}}
+
+  /* ---------- Sections ---------- */
+  section{padding:88px 0}
+  .sec-head{max-width:620px;margin-bottom:48px}
+  .sec-head h2{font-size:clamp(2rem,4.5vw,3rem);margin-top:14px}
+  .sec-head p{color:var(--ink-soft);font-size:1.1rem;margin-top:16px}
+
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .svc{
+    position:relative;background:var(--white);border:1px solid var(--line);
+    border-radius:var(--radius);padding:30px;overflow:hidden;
+    transition:transform .2s ease, box-shadow .25s ease, border-color .2s;
+  }
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--mint)}
+  .svc .num{position:absolute;right:24px;top:20px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;color:var(--mint)}
+  .svc-ic{width:50px;height:50px;border-radius:14px;background:var(--mint-soft);display:grid;place-items:center;margin-bottom:20px}
+  .svc-ic svg{width:25px;height:25px;color:var(--green)}
+  .svc h3{font-size:1.32rem}
+  .svc p{color:var(--ink-soft);margin-top:10px;font-size:.98rem}
+  @media(max-width:680px){.svc-grid{grid-template-columns:1fr}}
+
+  /* why band */
+  .why{background:linear-gradient(165deg,#0F2A20,#163d2c);color:#eaf4ec;border-radius:30px;padding:60px 48px;position:relative;overflow:hidden}
+  .why::after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(95,185,138,.32),transparent 70%)}
+  .why .sec-head h2{color:#fff}
+  .why .sec-head p{color:#bcd5c4}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative;z-index:1}
+  .stat .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2.8rem;color:#fff;line-height:1}
+  .stat .lbl{color:#a9cbb6;margin-top:8px;font-size:.92rem}
+  @media(max-width:760px){.why{padding:44px 26px}.why-grid{grid-template-columns:1fr 1fr;gap:28px 20px}}
+
+  /* reviews */
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .rev{background:var(--cream);border-radius:var(--radius);padding:28px;border:1px solid #efe6d3}
+  .rev .s{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+  .rev p{margin:16px 0 22px;font-size:1.02rem;color:#33423b}
+  .rev .who{display:flex;align-items:center;gap:12px}
+  .rev .who .a{width:42px;height:42px;border-radius:50%;background:linear-gradient(150deg,#cde7d8,#7cc39c);display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;color:#0c3a26}
+  .rev .who b{font-family:"Bricolage Grotesque",sans-serif;font-size:.98rem;display:block}
+  .rev .who span{font-size:.82rem;color:var(--ink-soft)}
+  @media(max-width:840px){.rev-grid{grid-template-columns:1fr}}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start}
+  .info-block{margin-bottom:26px}
+  .info-block .k{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--green)}
+  .info-block .k svg{width:17px;height:17px}
+  .info-block .v{font-size:1.32rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;margin-top:8px}
+  .info-block .v.small{font-size:1.05rem;font-weight:600}
+  .info-block .v a:hover{color:var(--green)}
+  form{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:7px;color:var(--ink-soft)}
+  .field input,.field select,.field textarea{
+    width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;
+    font-family:inherit;font-size:1rem;background:var(--paper);color:var(--ink);transition:border-color .2s, box-shadow .2s;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(28,124,77,.12)}
+  .field textarea{resize:vertical;min-height:96px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  form .btn-primary{width:100%;margin-top:8px}
+  .form-done{display:none;text-align:center;padding:18px 0}
+  .form-done .ck{width:62px;height:62px;border-radius:50%;background:var(--mint);display:grid;place-items:center;margin:0 auto 16px}
+  .form-done .ck svg{width:30px;height:30px;color:var(--green)}
+  .form-done h3{font-size:1.4rem}
+  .form-done p{color:var(--ink-soft);margin-top:8px}
+  @media(max-width:840px){.contact-grid{grid-template-columns:1fr;gap:32px}.two{grid-template-columns:1fr}}
+
+  /* footer */
+  footer{background:var(--ink);color:#a9c3b3;padding:54px 0 30px}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.09)}
+  footer .brand{color:#fff}
+  footer .f-tag{max-width:30ch;margin-top:14px;font-size:.94rem}
+  .foot-cta{display:flex;gap:12px;flex-wrap:wrap}
+  .foot-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:22px;font-size:.84rem}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l2-7h10l2 7M5 13h14M5 13l-1 6h16l-1-6M9 19v-3m6 3v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Greater Salt Lake<br style="display:none">&nbsp;House Cleaning
+    </a>
+    <nav class="nav-links">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#why">Why us</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="btn btn-primary" href="tel:+13853318787">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l1.5 5-2 1.5a11 11 0 005 5l1.5-2 5 1.5V19a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        Call now
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Salt Lake City · Family owned</span>
+      <h1>A home that feels<br><span class="shine">freshly cleaned.</span></h1>
+      <p class="lede">Trusted Salt Lake cleaners who treat your home like their own. Book once and feel the difference the moment you walk in.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg">Get a free estimate</a>
+        <a href="tel:+13853318787" class="btn btn-ghost btn-lg">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l1.5 5-2 1.5a11 11 0 005 5l1.5-2 5 1.5V19a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          (385) 331-8787
+        </a>
+      </div>
+      <div class="trust-row">
+        <div class="stars">
+          <span class="s">★★★★★</span><b>5.0</b>
+        </div>
+        <span class="muted">11 verified Google reviews</span>
+        <div class="trust-sep" aria-hidden="true"></div>
+        <span class="muted">Replies in ~15 min</span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <div class="card-top">
+        <div class="avatar" aria-hidden="true">GS</div>
+        <div>
+          <div class="ct-name">Greater Salt Lake House Cleaning</div>
+          <div class="ct-sub">Verified by Google · Background checked</div>
+        </div>
+      </div>
+      <div class="badge-grid">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>Serves all of SLC</div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.6 18.2l.9-5.5-4-3.9 5.5-.8L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>5.0 star rated</div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Free estimates</div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Open 24 hours</div>
+      </div>
+      <div class="ping"><span class="dot" aria-hidden="true"></span> Now booking this week in Salt Lake City</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Deep cleans <i>✦</i> Move-in / Move-out <i>✦</i> Office cleaning <i>✦</i> Standard cleaning <i>✦</i> Family owned <i>✦</i> Woman owned <i>✦</i> Locally owned <i>✦</i> Free estimates <i>✦</i></span>
+    <span>Deep cleans <i>✦</i> Move-in / Move-out <i>✦</i> Office cleaning <i>✦</i> Standard cleaning <i>✦</i> Family owned <i>✦</i> Woman owned <i>✦</i> Locally owned <i>✦</i> Free estimates <i>✦</i></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we clean</span>
+      <h2>Cleaning that fits your home and your week.</h2>
+      <p>Pick the clean you need. We bring the supplies, the care, and the checklist.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <span class="num">01</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21l4-4M14 4l6 6-9 9-6-1-1-6 9-9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>Deep clean</h3>
+        <p>Top to bottom. Baseboards, grout, behind and under — the spots a quick tidy always misses.</p>
+      </div>
+      <div class="svc reveal">
+        <span class="num">02</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 13l9-9 9 9M5 11v8h14v-8M9 19v-5h6v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>Move-in / move-out</h3>
+        <p>Leaving or arriving? We hand the place over spotless so you get the deposit and the fresh start.</p>
+      </div>
+      <div class="svc reveal">
+        <span class="num">03</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18M8 18v2m8-2v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Office clean</h3>
+        <p>A workspace your team and clients notice. Flexible hours, dependable results, every visit.</p>
+      </div>
+      <div class="svc reveal">
+        <span class="num">04</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Standard clean</h3>
+        <p>The reliable reset. Kitchens, baths, floors, and dusting on a rhythm that keeps home easy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" style="padding-top:20px">
+  <div class="wrap">
+    <div class="why reveal">
+      <div class="sec-head" style="margin-bottom:40px">
+        <span class="eyebrow" style="color:#7fd0a4">Why neighbors choose us</span>
+        <h2>Real people. Real care. Real spotless.</h2>
+        <p>We're a family-run, woman-owned crew that's earned a perfect rating one home at a time.</p>
+      </div>
+      <div class="why-grid">
+        <div class="stat"><div class="big">5.0</div><div class="lbl">Average Google rating</div></div>
+        <div class="stat"><div class="big">100%</div><div class="lbl">5-star reviews</div></div>
+        <div class="stat"><div class="big">24/7</div><div class="lbl">Booking availability</div></div>
+        <div class="stat"><div class="big">Free</div><div class="lbl">In-home estimates</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="padding-top:30px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">From our customers</span>
+      <h2>Salt Lake homes, happily handed back.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"Highly recommend this company's service! They clean for me bi-weekly and my house looks amazing every time! 10/10"</p>
+        <div class="who"><span class="a">N</span><div><b>Nasra Mohamed</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"Highly recommended. They came to our house for a two hour cleaning and left it spotless. We will definitely use your service again."</p>
+        <div class="who"><span class="a">H</span><div><b>halimo mowlid</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"Best company I've used for a house cleaning. Everything was left spotless and couldn't have asked for more."</p>
+        <div class="who"><span class="a">M</span><div><b>Mo Omar</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"Phenomenal work! I highly recommend Greater Salt Lake House Cleaning, I wouldn't want anyone else! 10/10."</p>
+        <div class="who"><span class="a">L</span><div><b>Libertie Weis</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"Phenomenal. My space has never looked better. Would 1000% recommend, I will be using this service again."</p>
+        <div class="who"><span class="a">M</span><div><b>Mele Misa</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="s">★★★★★</div>
+        <p>"The best company I've used so far. Incredible customer service!!"</p>
+        <div class="who"><span class="a">Y</span><div><b>Yusuf Yusuf</b><span>Salt Lake City · Google review</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-bottom:60px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Get started</span>
+      <h2>Let's get your home spotless.</h2>
+      <p>Send a few details and we'll reply with a free estimate — usually within 15 minutes.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-block">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l1.5 5-2 1.5a11 11 0 005 5l1.5-2 5 1.5V19a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Call or text</div>
+          <div class="v"><a href="tel:+13853318787">(385) 331-8787</a></div>
+        </div>
+        <div class="info-block">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>Service area</div>
+          <div class="v small">Salt Lake City &amp; nearby areas</div>
+        </div>
+        <div class="info-block">
+          <div class="k"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Hours</div>
+          <div class="v small">Open 24 hours · 7 days a week</div>
+        </div>
+      </div>
+
+      <form id="quoteForm">
+        <div id="formFields">
+          <div class="two">
+            <div class="field"><label for="name">Your name</label><input id="name" type="text" placeholder="Jane Doe" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="(385) 000-0000" required></div>
+          </div>
+          <div class="field"><label for="service">Service needed</label>
+            <select id="service">
+              <option>Deep clean</option>
+              <option>Move-in / move-out clean</option>
+              <option>Office clean</option>
+              <option>Standard clean</option>
+              <option>Not sure — help me choose</option>
+            </select>
+          </div>
+          <div class="field"><label for="msg">Tell us about your space</label><textarea id="msg" placeholder="Number of bedrooms/baths, and when you'd like it cleaned..."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-lg">Request my free estimate</button>
+        </div>
+        <div class="form-done" id="formDone">
+          <div class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Thank you!</h3>
+          <p>We got your request and will reach out shortly with your free estimate.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l2-7h10l2 7M5 13h14M5 13l-1 6h16l-1-6M9 19v-3m6 3v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Greater Salt Lake House Cleaning
+        </a>
+        <p class="f-tag">Family-owned, woman-owned cleaning serving Salt Lake City with a perfect 5.0 rating.</p>
+      </div>
+      <div class="foot-cta">
+        <a href="tel:+13853318787" class="btn btn-primary">Call (385) 331-8787</a>
+        <a href="#contact" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.25)">Free estimate</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Greater Salt Lake House Cleaning. All rights reserved.</span>
+      <span>Deep · Move-out · Office · Standard cleaning</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // header shadow on scroll
+  const header = document.getElementById('top');
+  addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', scrollY > 12);
+  });
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, { threshold: .14 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // demo form (no backend — shows confirmation in-memory)
+  document.getElementById('quoteForm').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    document.getElementById('formFields').style.display = 'none';
+    document.getElementById('formDone').style.display = 'block';
+  });
+</script>
+</body>
+</html>
